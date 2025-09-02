@@ -43,17 +43,14 @@ const Dashboard: React.FC = () => {
         const localizadoresConCliente = (localizadores as Localizador[])
           .filter(l => l.CLIENTE || l.ClienteId || (l.Cliente && l.Cliente.ID));
         const ingresosLocalizadoresCalc = localizadoresConCliente
-          .reduce((sum, l) => sum + (l.CUOTA_ANUAL_TOTAL || l.CuotaAnualTotal || 0), 0);
+          .reduce((sum, l) => sum + ((l.CUOTA_MENSUAL_TOTAL || l.CuotaMensualTotal || 0) * 12), 0);
         setIngresosLocalizadores(ingresosLocalizadoresCalc);
-        console.log('Ingresos localizadores:', ingresosLocalizadoresCalc);
         // Ingresos mensuales solo de GPS activos (con cliente asociado)
         const ingresosMensuales = localizadoresConCliente
           .reduce((sum, l) => sum + (l.CUOTA_MENSUAL_TOTAL || l.CuotaMensualTotal || 0), 0);
         setIngresosMensuales(ingresosMensuales);
-        console.log('Ingresos mensuales:', ingresosMensuales);
         // Actualizar ingresos anuales totales
         setIngresosAnuales(ingresosAcuerdosCalc + ingresosLocalizadoresCalc);
-        console.log('Ingresos anuales totales:', ingresosAcuerdosCalc + ingresosLocalizadoresCalc);
 
   // pieData se define fuera del useEffect usando los estados
 
@@ -132,6 +129,20 @@ const Dashboard: React.FC = () => {
               <p className="text-sm font-medium text-gray-600">Ingresos Anuales</p>
               <p className="text-2xl font-semibold text-gray-900">€{ingresosAnuales.toLocaleString()}</p>
               <p className="text-xs text-green-600">Total anual (acuerdos cobrados + GPS)</p>
+            </div>
+          </div>
+        </div>
+        <div className="card p-6">
+          <div className="flex items-center">
+            <div className="p-2 bg-purple-100 rounded-lg">
+              <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div className="ml-4">
+              <p className="text-sm font-medium text-gray-600">Ingresos Programas Informáticos</p>
+              <p className="text-2xl font-semibold text-gray-900">€{ingresosAcuerdos.toLocaleString()}</p>
+              <p className="text-xs text-purple-600">Total anual por acuerdos informáticos</p>
             </div>
           </div>
         </div>
