@@ -1,0 +1,10 @@
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\appsettings.Development.json
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\appsettings.json
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\package-lock.json
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\package.json
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\NgproMantenimientos.Api.pdb
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\aspnetcorev2_inprocess.dll
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\libSkiaSharp.dll
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\e_sqlite3.dll
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Ngpro_Mantenimientos_Javi\Codigo_Joaquin\backend\bin\Release\net8.0\win-x64\publish\NgproMantenimientos.Api.exe

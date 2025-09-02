@@ -9,8 +9,6 @@
 *.gz
 
 # Ignorar carpetas de compilación
-/backend/bin/
-/backend/obj/
 /frontend/ngpro-mantenimientos-frontend/node_modules/
 /logs/
 
