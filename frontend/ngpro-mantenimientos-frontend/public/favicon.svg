@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo con bordes redondeados -->
+  <rect x="4" y="4" width="56" height="56" rx="12" ry="12" 
+        fill="url(#bgGradient)" stroke="#1e40af" stroke-width="2"/>
+  
+  <!-- Texto NGPRO simplificado -->
+  <text x="32" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="bold" 
+        text-anchor="middle" fill="white">NG</text>
+  <text x="32" y="45" font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+        text-anchor="middle" fill="#fbbf24">PRO</text>
+  
+  <!-- Icono de herramienta -->
+  <path d="M20 48 L24 44 L26 46 L22 50 Z M40 48 L44 44 L42 46 L38 50 Z" 
+        fill="#fbbf24" stroke="#fbbf24" stroke-width="1"/>
+</svg>
