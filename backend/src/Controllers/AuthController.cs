@@ -21,7 +21,12 @@ public class AuthController : ControllerBase
         try
         {
             // Simulación de login - aquí iría la lógica real de autenticación
-            if (request.Email == "superadmin@ngpro.es" && request.Password == "Ngpr@@@2025@@")
+            // Leer credenciales desde variables de entorno
+            DotNetEnv.Env.Load();
+            var adminEmail = Environment.GetEnvironmentVariable("ADMIN_EMAIL");
+            var adminPassword = Environment.GetEnvironmentVariable("ADMIN_PASSWORD");
+
+            if (request.Email == adminEmail && request.Password == adminPassword)
             {
                 return Ok(new
                 {
@@ -29,12 +34,12 @@ public class AuthController : ControllerBase
                     user = new
                     {
                         id = 1,
-                        email = request.Email,
+                        email = adminEmail,
                         name = "SuperAdmin"
                     }
                 });
             }
-            
+
             return Unauthorized(new { message = "Credenciales inválidas" });
         }
         catch (Exception ex)

@@ -386,3 +386,5 @@ C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Codigo_Final_Mantenimientos\bac
 C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Codigo_Final_Mantenimientos\backend\obj\Debug\net8.0\NgproMantenimientos.Api.pdb
 C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Codigo_Final_Mantenimientos\backend\obj\Debug\net8.0\NgproMantenimientos.Api.genruntimeconfig.cache
 C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Codigo_Final_Mantenimientos\backend\obj\Debug\net8.0\ref\NgproMantenimientos.Api.dll
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Codigo_Final_Mantenimientos\backend\bin\Debug\net8.0\DotNetEnv.dll
+C:\Users\Ngpro\Documents\Joaquin\Proyectos React\Codigo_Final_Mantenimientos\backend\bin\Debug\net8.0\Sprache.dll

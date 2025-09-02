@@ -25,23 +25,28 @@ export const useAuthStore = create<AuthState>()(
       user: null,
       token: null,
       login: async (email: string, password: string) => {
-        // Simulación de login - aquí iría la llamada real a la API
-        if (email === 'superadmin@ngpro.es' && password === 'Ngpr@@@2025@@') {
-          const user: User = {
-            id: 1,
-            nombre: 'SuperAdmin',
-            email: 'superadmin@ngpro.es',
-            rol: 'Admin',
-          };
-          const token = 'fake-jwt-token';
-          set({
-            isAuthenticated: true,
-            user,
-            token,
-          });
-        } else {
+        // Login real contra la API del backend
+        const response = await fetch('http://localhost:5000/api/Auth/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, password }),
+        });
+        if (!response.ok) {
           throw new Error('Credenciales inválidas');
         }
+        const data = await response.json();
+        set({
+          isAuthenticated: true,
+          user: {
+            id: data.user.id,
+            nombre: data.user.name,
+            email: data.user.email,
+            rol: data.user.role || 'Admin',
+          },
+          token: data.token,
+        });
       },
       logout: () => {
         set({
