@@ -73,7 +73,7 @@ const Login: React.FC = () => {
                   autoComplete="email"
                   required
                   className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-xl shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-ngpro-500 focus:border-ngpro-500 transition-colors sm:text-sm"
-                  placeholder="admin@ngpro.es"
+                  placeholder="ejemplo@mail.es"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -112,14 +112,7 @@ const Login: React.FC = () => {
                   )}
                 </button>
               </div>
-            </div>
-
-            {/* Demo credentials */}
-            <div className="bg-ngpro-50 rounded-xl p-4 border border-ngpro-200">
-              <p className="text-xs text-ngpro-700 font-medium mb-2">Credenciales de demostración:</p>
-              <p className="text-xs text-ngpro-600">Email: admin@ngpro.es</p>
-              <p className="text-xs text-ngpro-600">Contraseña: admin123</p>
-            </div>
+            </div>          
 
             {/* Submit button */}
             <button

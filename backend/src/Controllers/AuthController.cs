@@ -21,7 +21,7 @@ public class AuthController : ControllerBase
         try
         {
             // Simulación de login - aquí iría la lógica real de autenticación
-            if (request.Email == "admin@ngpro.es" && request.Password == "admin123")
+            if (request.Email == "superadmin@ngpro.es" && request.Password == "Ngpr@@@2025@@")
             {
                 return Ok(new
                 {
@@ -30,7 +30,7 @@ public class AuthController : ControllerBase
                     {
                         id = 1,
                         email = request.Email,
-                        name = "Administrador"
+                        name = "SuperAdmin"
                     }
                 });
             }
@@ -68,8 +68,8 @@ public class AuthController : ControllerBase
             return Ok(new
             {
                 id = 1,
-                email = "admin@ngpro.es",
-                name = "Administrador",
+                email = "superadmin@ngpro.es",
+                name = "SuperAdmin",
                 role = "Admin"
             });
         }

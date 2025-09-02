@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NgproMantenimientos.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aaec5e8cfab4a6354221b1225c383a24a7ff043")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0099198c079bceea192d12536602a4d332cca0d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("NgproMantenimientos.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NgproMantenimientos.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

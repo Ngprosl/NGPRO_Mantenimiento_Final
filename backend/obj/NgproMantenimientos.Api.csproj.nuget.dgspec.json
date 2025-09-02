@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Ngpro_Mantenimientos_Javi\\Codigo_Joaquin\\backend\\NgproMantenimientos.Api.csproj": {}
+    "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Codigo_Final_Mantenimientos\\backend\\NgproMantenimientos.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Ngpro_Mantenimientos_Javi\\Codigo_Joaquin\\backend\\NgproMantenimientos.Api.csproj": {
+    "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Codigo_Final_Mantenimientos\\backend\\NgproMantenimientos.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Ngpro_Mantenimientos_Javi\\Codigo_Joaquin\\backend\\NgproMantenimientos.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Codigo_Final_Mantenimientos\\backend\\NgproMantenimientos.Api.csproj",
         "projectName": "NgproMantenimientos.Api",
-        "projectPath": "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Ngpro_Mantenimientos_Javi\\Codigo_Joaquin\\backend\\NgproMantenimientos.Api.csproj",
+        "projectPath": "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Codigo_Final_Mantenimientos\\backend\\NgproMantenimientos.Api.csproj",
         "packagesPath": "C:\\Users\\Ngpro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Ngpro_Mantenimientos_Javi\\Codigo_Joaquin\\backend\\obj\\",
+        "outputPath": "C:\\Users\\Ngpro\\Documents\\Joaquin\\Proyectos React\\Codigo_Final_Mantenimientos\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ngpro\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -95,12 +95,6 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.19, )",
-              "autoReferenced": true
-            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -133,20 +127,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.19, 8.0.19]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.19, 8.0.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -156,11 +136,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }
