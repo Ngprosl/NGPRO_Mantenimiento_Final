@@ -25,8 +25,8 @@ export const useAuthStore = create<AuthState>()(
       user: null,
       token: null,
       login: async (email: string, password: string) => {
-        // Login real contra la API del backend
-        const response = await fetch('http://localhost:5000/api/Auth/login', {
+        // Login real contra la API del backend (ruta relativa para funcionar detrás de Nginx)
+        const response = await fetch('/api/Auth/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

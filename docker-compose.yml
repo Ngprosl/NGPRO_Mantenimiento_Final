@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: ngpro-backend
+    env_file:
+      - ./backend/.env
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./frontend/ngpro-mantenimientos-frontend
+    container_name: ngpro-frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+    # No env needed; Nginx proxies /api to backend
